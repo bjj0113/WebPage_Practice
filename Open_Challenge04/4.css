@@ -1,0 +1,16 @@
+body{background-color: aliceblue;}
+body h1{color:brown;
+        text-align: center;}
+body p{font-family: "휴먼편지체";
+        font-size: 1em;
+        text-indent:  1em;}
+h2 {color:blue;
+    text-shadow: 3px 3px 3px skyblue;}
+a{text-decoration: none;}
+header{border-bottom: 1px solid black;}
+nav ul{border:1px dotted black}
+footer{
+    padding-left: 20px;
+    background-color: orange;
+    border-radius: 10px;
+    font-family: "휴먼편지체","굴림";}

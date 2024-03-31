@@ -1,0 +1,21 @@
+body{background-color: aliceblue;
+    padding: 10px;}
+body h1{text-align: center;
+        color:brown}
+body p{font-family:  "휴먼편지체","굴림";
+        padding-left: 10px;}
+form {background-color: pink;
+        padding-left: 20px;
+        font-family:  "휴먼편지체","굴림";
+        margin: 10px;
+        }
+form span{
+    color: blue;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    }
+footer{
+    padding-left: 10px;
+    background-color: orange;
+    border-radius: 50px;
+    font-family: "휴먼편지체","굴림";}
