@@ -1,0 +1,36 @@
+html, body {
+	margin : 0px;
+	padding : 0px;
+        height: 100%;
+        font-size: 13px;
+}
+header {
+       
+        margin-top: -20px;
+	background: yellow;
+	width: 100%; height: 20%;
+	
+}
+article{height: 18%; font-size: 13px;}
+nav {
+	font-size: 13px;
+	background: orange;
+	width: 20%; height: 72%;
+	float: left;
+}
+
+section {
+	background: lightblue;
+	width: 80%; height: 72%;
+	float: left;
+}
+footer {
+        font-size: 13px;
+	background: violet;
+	width: 100%; height: 8%;
+	float: left;
+        
+}
+img{ width: 100%; height: 100px;}
+
+header h1 {text-align : center; }
