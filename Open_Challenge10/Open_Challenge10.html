@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>눈 내리는 사걀의 마을</title>
+    <style>
+        body {
+            background-image: url("snow.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let x = [];
+        let y = [];
+        function initsnow() {
+            for (let i = 0; i < 30; i++) {
+                x[i] = Math.floor(Math.random() * innerWidth + 1);
+                y[i] = Math.floor(Math.random() * innerHeight + 1);
+                document.body.innerHTML += "<div style='position: absolute; color: white; font-size : 25px;top:" + y[i] + "px; left:" + x[i] + "px;'>*</div>"
+            }
+        }
+        function downsnow() {
+            document.body.innerHTML = ""
+            for (let i = 0; i < 30; i++) {
+                y[i] = y[i] + 5;
+                if (y[i] >= innerHeight + 1)
+                    y[i] = 0
+                document.body.innerHTML += "<div style='position: absolute; color: white; font-size : 25px;top:" + y[i] + "px; left:" + x[i] + "px;'>*</div>"
+
+            }
+
+        }
+        initsnow();
+        let timerID = setInterval("downsnow()", 300)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>겜블링 게임</title>
+    <style>
+        table {
+            color: blue;
+            background-color: wheat;
+            border: 1px solid violet;
+            font-family: consolas, sans-serif;
+            font-style: italic;
+        }
+
+        td {
+            width: 50px;
+            text-align: center;
+            height: 50px;
+            font-size: 50px;
+            padding: 0px;
+        }
+
+        div {
+            font: italic 18px consolas, sans-serif;
+            color: magenta;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function change(obj) {
+            obj.innerHTML = Math.floor(Math.random() * 3);
+            if (obj.id == "third") {
+                msg();
+            }
+        }
+        function msg() {
+            a = document.getElementById("first");
+            b = document.getElementById("second");
+            c = document.getElementById("third");
+            d = document.getElementById("div");
+            if (a.innerHTML == b.innerHTML && a.innerHTML == c.innerHTML) {
+                d.innerHTML = "Success(click here to do again)"
+            }
+            else {
+                d.innerHTML = "fail(click here to do again)"
+            }
+        }
+        function reset() {
+            a = document.getElementById("first");
+            b = document.getElementById("second");
+            c = document.getElementById("third");
+            d = document.getElementById("div");
+            a.innerHTML = "0"
+            b.innerHTML = "0"
+            c.innerHTML = "0"
+            d.innerHTML = ""
+        }
+    </script>
+</head>
+
+<body>
+    <h3>겜블링 게임</h3>
+    <p>
+        각 숫자를 클릭하면 0에서 2사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.
+    </p>
+    <hr>
+    <table>
+        <tbody>
+            <tr>
+                <td id="first" onclick="change(this)">0</td>
+                <td id="second" onclick="change(this)">0</td>
+                <td id="third" onclick="change(this)">0</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="div" onclick="reset()">
+    </div>
+
+</body>
+
+</html>
